@@ -55,7 +55,6 @@ namespace httpopotamus
                 lineLength = 53 + osoite.Length;
                 contentToBeChecked = FetchContent.GetPageHash(osoite);
                 int timeInt = Convert.ToInt32(AikaVali.Text);
-                //this.ValueChecker();
                 this.ValueMultiplier();
                 _timer = new System.Windows.Threading.DispatcherTimer();
                 _timer.Interval = TimeSpan.FromMilliseconds(multiplier * timeInt);
@@ -68,7 +67,6 @@ namespace httpopotamus
             {
                 StopTimer();
             }
-            //this.WindowState = System.Windows.WindowState.Minimized;
             this.nIcon.Icon = new Icon("hippo.ico");
             this.nIcon.Visible = true;
         }
